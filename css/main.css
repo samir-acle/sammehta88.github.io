@@ -1,0 +1,336 @@
+/*TODO: change universal selector (*) to help wih rendering;
+
+/*common styles*/
+/* developed for mobile first */
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Averia Serif Libre', cursive;
+	font-weight: 300;
+}
+
+/*classes for icon image from http://weloveiconfonts.com/*/
+[class*="maki-"]:before {
+  font-family: 'maki', sans-serif;
+}
+
+/* zocial - from http://weloveiconfonts.com/ */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+  font-size: 20px;
+}
+
+/*css for the header*/
+.heading {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	background: white;
+	height: 75px;
+}
+
+.logo {
+	width: 25%;
+}
+
+.icon {
+	width: 50%;
+	font-size: 50px;
+	padding: 23px 0 0 5vw;
+}
+
+.name-title {
+	width: 75%;
+	display: block;
+	text-align: right;
+}
+
+.name,
+.job-title {
+	width: 100%;
+	margin: 0;
+}
+
+.name {
+	font-size: 24px;
+	font-weight: 700;
+	padding: 24px 5vw 0 0;
+}
+
+.job-title {
+	font-size: 18px;
+	padding: 0 5vw 0 0;
+}
+
+/* hides links nav bar on small screens */
+.nav-bar {
+	display: none;
+}
+
+/*body styles*/
+/*sets size of main image for small screens*/
+.main-image-view {
+	width: 100%;
+	height: 50vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(images/koda_smallest-500_30.jpg);
+	background-size: cover;
+}
+
+/*css for featured work section*/
+.work {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.project {
+	width: 100%;
+}
+
+.content {
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.project-name,
+.link {
+	margin: 0;
+	padding: 0;
+}
+
+.featured {
+	text-align: left;
+	width: 100%;
+	margin: auto 0;
+	padding: 0 0 0 5px;
+}
+
+/*CSS for contact info section*/
+.contact-header {
+	text-align: left;
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 0 0 0 5px;
+}
+
+.contact-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 25px;
+}
+
+.footer {
+	text-align: center;
+	padding: 15px;
+	background: rgba(43,43,43,0.45);
+}
+
+.to-top {
+	color: white;
+	text-decoration: none;
+}
+
+.logo-link {
+	padding: 0 20px;
+}
+
+.link-icon {
+	text-decoration: none;
+}
+
+/*for tablets and larger mobile screens*/
+@media screen and (min-width: 445px) {
+
+/*sets background image as fullscreen fixed image*/
+	body::after {
+		content: "";
+		position: fixed;
+		top: -40px;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-image: url(images/koda_large-500_50.jpg);
+		background-size: cover;
+		background-position: center top;
+		z-index: -1;
+	}
+
+/*sets height of viewing windown of main image*/
+	.main-image-view {
+		height: calc(100vh - 75px);
+		background-image: none;
+	}
+
+/*nav bar is visible on bottom of screen*/
+	.featured-link,
+	.contact-link {
+		color: black;
+	}
+
+	.anchor {
+		text-decoration: none;
+	}
+
+/*orange headers for featured work and contact info sections*/
+	.featured {
+		background: rgba(200,110,53,1);
+		height: 15vh;
+		color: white;
+		text-align: center;
+		padding: calc(7.5vh - .75em) 0 0 0;
+	}
+
+	.contact-header {
+		background: rgba(200,110,53,1);
+		height: 15vh;
+		color: white;
+		text-align: center;
+		padding: calc(7.5vh - .75em) 0 0 0;
+		margin: auto 0;
+	}
+
+	.text-shadow {
+		text-shadow: 1px 1px 2px black;
+	}
+
+	.featured-link {
+		padding: 0 0 0 5vw;
+	}
+
+	.contact-link {
+		padding: 0 5vw 0 0;
+		text-align: right;
+	}
+
+	.nav-link {
+		display: inline;
+	}
+
+/*featured work section is fullscreen after clicking on link in nav bar*/
+	.work {
+		background: rgba(43,43,43,0.75);
+		height: calc(100vh - 15vh);
+	}
+
+	.work-link {
+		background: white;
+		display: flex;
+		flex-flow: row wrap;
+		height: 75px;
+		margin: auto 0 0 0;
+		width: 100%;
+		justify-content: space-between;
+		padding: 0;
+	}
+
+	.project {
+		width: 50%;
+	}
+
+	.nav-bar {
+		display: block;
+		height: 75px;
+		padding: calc(100vh - 150px) 0 0 0;
+	}
+
+	.main-body {
+		color: white;
+	}
+
+	.nav-link {
+		width: 25%;
+	}
+
+	.contact-section {
+		background: rgba(43,43,43,0.75);
+	}
+
+	.footer {
+		background: white;
+	}
+
+	.to-top {
+		color: black;
+	}
+
+	.external-link {
+		color: white;
+		text-decoration: none;
+	}
+
+	.link {
+		padding: 7.5px 0 0 0;
+	}
+}
+
+/* for large screens */
+@media screen and (min-width: 1000px) {
+	/*changes name and job title to inline*/
+	.job-title {
+		font-size: 1.17em;
+		padding: 0;
+	}
+
+	.name {
+		font-size: 2em;
+		padding: 10px 5vw 0 0;
+	}
+
+	.name-title,
+	.name,
+	.job-title {
+		display: inline;
+	}
+
+	.name-title {
+		padding: 40px 5vw 0 0;
+	}
+
+	.project {
+		width: 25%;
+		flex-grow: 1;
+	}
+}
+
+/*adjusts background image for different size screens*/
+/*for both performance sake (smaller filesizes) and to make it look better*/
+@media screen and (min-width: 375px) and (max-width: 431px) {
+	.main-image-view {
+		background-image: url(images/koda_small-500_30.jpg);
+	}
+}
+
+@media screen and (min-width: 431px) and (max-width: 445px) {
+	.main-image-view {
+		background-image: url(images/koda_med-500_30.jpg);
+	}
+}
+
+@media screen and (min-width: 500px) {
+	body::after {
+		background-image: url(images/koda_large-800_30.jpg);
+	}
+}
+
+@media screen and (min-width: 830px) {
+	body::after {
+		background-image: url(images/koda_large-800_50.jpg);
+		background-size: contain;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	body::after {
+		background-image: url(images/koda_large-1600_50.jpg);
+	}
+}

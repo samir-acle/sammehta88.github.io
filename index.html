@@ -1,60 +1,107 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Samir Mehta - Resume</title>
-</head>
-<body>
-	<header>
-		<h1 class='name'>Samir M. Mehta</h1>
-		<span class='info'>Washington, D.C.</span>
-		<span class='info'>&bull;</span>
-		<span class='info'>sammehta88@gmail.com</span>
-		<span class='info'>&bull;</span>
-		<span class='info'>(248) 739-9185</span>
-	</header>
 
-	<main>
-		<div class="experience">
-			<h2 class='section-title'>Work Experience</h2>
-			<h3 class='company-name'>General Mills</h3>
-			<h3 class='role'>Manufacturing and Engineering Associate</h3>
-			<p class='location'>Reed City, MI 2013-2015</p>
-			<ul class='job-description'>
-				<li class='job-bullet'>Project Engineer - Executed plant-lef capital projects</li>
-				<li class='job-bullet'>Packaging Systems Engineer - Supported packaing of yogurt in multipack format</li>
-				<li class='job-bullet'>Processing Systems Engineer - Supported production of yogurt, from milk receiving through fermentation</li>
-			</ul>
+<!-- TODO: add links to projects when completed.  add personal links for twitter, linkedin, etc. -->
+<!-- TODO: add pictures for projects (svg logo or icon preferred to picture size)                -->
+<!-- TODO: use photoshop of other image editing software to extend original cat image            -->
+<!--       so don't have multiple images on larger screens                                       -->
+<!-- TODO: add section below featured work to let user know page continues -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Samir's Portfolio</title>
+
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=maki">
+		<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:300,700' rel='stylesheet'>
+		<link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial">
+
+	</head>
+	<body>
+		<header class="heading" id="top">
+			<div class="logo">
+				<div class="maki-giraffe icon"></div>
+			</div>
+			<div class="name-title">
+				<h1 class="name">Samir Mehta</h1>
+				<h3 class="job-title">Web Developer</h3>
+			</div>
+		</header>
+
+<!-- section below did not fit as a header or the main body so created separate div -->
+		<div class="main-image-view">
+			<nav class="nav-bar">
+				<ul class="work-link">
+					<li class="nav-link portfolio-link"><a href="#featured-work" class="anchor"><h2 class="featured-link">Portfolio</h2></a></li>
+					<li class="nav-link"><a href="#contact" class="anchor"><h2 class="contact-link">Contact</h2></a></li>
+				</ul>
+			</nav>
 		</div>
 
-		<div class="education">
-			<h2 class='section-title'>Education</h2>
-			<h3 class='university'>Dartmouth College</h3>
-			<h4 class='degree'>Bachelor of Engineering - Mechanical Engineering</h4>
-			<h4 class='date'>June 2012</h4>
-		</div>
+		<main class="main-body">
+			<div id="featured-work">
+				<h2 class="featured text-shadow">Featured Work</h2>
+			</div>
 
-		<div class="Leadership">
-			<h2 class='section-title'>Leadership</h2>
-			<h3 class='role'>Emergency Response Team Member</h3>
-		</div>
+<!-- placeholders for future projects -->
+			<div class="work">
+				<article class="project">
+					<div class="content">
+						<img src="http://placehold.it/150x150" alt="project image">
+						<h3 class="project-name">Project 1</h3>
+						<p class="link"><a href="" class="external-link">github link</a></p>
+					</div>
+				</article>
 
-		<div class="Skills">
-			<h2 class="section-title">Skills and Hobbies</h2>
-			<ul class="skills-list">
-				<li class='skill'>CAD: Certified Solid Works Professional</li>
-				<li class='skill'>Programming: HTML, CSS, JavaScript, Knockout.js, Matlab</li>
-				<li class='skill'>Language: Conversational in Mandarin Chinese</li>
-			</ul>
-		</div>
-	</main>
+				<article class="project">
+					<div class="content">
+						<img src="http://placehold.it/150x150" alt="project image">
+						<h3 class="project-name">Project 2</h3>
+						<p class="link"><a href="" class="external-link">github link</a></p>
+					</div>
+				</article>
 
-	<footer>
-		<h2 class='section-title'>Contact Me</h2>
-		<a href="" class='link'>Github</a>
-		<span class='info'>&bull;</span>
-		<a href="" class='link'>LinkedIn</a>
-		<span class='info'>&bull;</span>
-		<a href="" class='link'>Gmail</a>
-	</footer>
-</body>
+				<article class="project">
+					<div class="content">
+						<img src="http://placehold.it/150x150" alt="project image">
+						<h3 class="project-name">Project 3</h3>
+						<p class="link"><a href="" class="external-link">github link</a></p>
+					</div>
+				</article>
+			</div>
+
+			<div>
+				<h2 class="contact-header text-shadow" id="contact">Contact Info</h2>
+			</div>
+
+			<div class="contact-section">
+				<div class="logo-link">
+					<a href="http://www.gmail.com" class="zocial-gmail external-link link-icon" title="g mail"></a>
+				</div>
+
+				<div class="logo-link">
+					<a href="http://plus.google.com" class="zocial-googleplus external-link link-icon" title="google plus"></a>
+				</div>
+
+				<div class="logo-link">
+					<a href="http://www.twitter.com" class="zocial-twitter external-link link-icon" title="twitter"></a>
+				</div>
+
+				<div class="logo-link">
+					<a href="http://www.linkedin.com" class="zocial-linkedin external-link link-icon" title="linked in"></a>
+				</div>
+
+				<div class="logo-link">
+					<a href="http://github.com" class="zocial-github external-link link-icon" title="git hub"></a>
+				</div>
+			</div>
+
+			<footer class="footer">
+				<a href="#top" class="to-top">Back to Top</a>
+			</footer>
+		</main>
+	</body>
 </html>
