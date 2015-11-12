@@ -25,6 +25,16 @@ body {
   font-size: 20px;
 }
 
+/*css for temp message*/
+.message {
+	position: absolute;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	top: 40vh;
+}
+
 /*css for the header*/
 .heading {
 	display: flex;
