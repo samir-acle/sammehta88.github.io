@@ -32,7 +32,17 @@ body {
 	color: white;
 	text-align: center;
 	width: 100%;
-	top: 40vh;
+	top: 5vh;
+}
+
+/*css for resume link*/
+.resume {
+	position: absolute;
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	top: 50vh;
 }
 
 /*css for the header*/
